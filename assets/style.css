@@ -1,0 +1,115 @@
+nav {background-color: #5aa886;
+}
+.navbar-brand {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    margin-left: 20px;
+    
+}
+
+body {
+    padding-top: 15px; 
+}
+
+
+
+/* Sección Proyectos */
+#projects {
+    background-color:#5aa886 ;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card.active {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    #about .text-center {
+        text-align: center;
+    }
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #C1F7DC;
+    padding: 20px;
+}
+
+.container1 {
+    text-align: center;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+p {
+    color: #666;
+}
+
+
+
+.skill-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.progress-container {
+    margin-top: 10px;
+    background-color: #5aa886;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+button:hover {
+    background:#5aa886 ;
+}
+
+.hidden {
+    display: none;
+}
+
+#moreInfo {
+    margin-top: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+#contact {
+    background-color: #C1F7DC;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    
+
+}
+
+
+
+footer {
+    background-color:#5aa886;
+}
