@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         title.addEventListener('click', () => {
             const content = title.nextElementSibling;
 
-            // Toggle the display of the skill content
+            
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
             } else {
@@ -47,32 +47,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let isValid = true;
 
-        // Limpiar mensajes de errores
+        // limpiar mensajes  errores
         document.querySelectorAll(".invalid-feedback").forEach(el => el.classList.add("d-none"));
         form.querySelectorAll(".form-control").forEach(el => el.classList.remove("is-invalid"));
 
-        // Validar nombre
+        // validar nombre
         if (nameInput.value.trim() === "") {
             isValid = false;
             nameInput.classList.add("is-invalid");
             document.getElementById("nameError").classList.remove("d-none");
         }
 
-        // Validar correo electrónico
+        // validar correo electrónico
         if (!emailInput.value.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
             isValid = false;
             emailInput.classList.add("is-invalid");
             document.getElementById("emailError").classList.remove("d-none");
         }
 
-        // Validar mensaje
+        // validar mensaje
         if (messageInput.value.trim() === "") {
             isValid = false;
             messageInput.classList.add("is-invalid");
             document.getElementById("messageError").classList.remove("d-none");
         }
 
-        // Mostrar éxito si todo es válido
+        // mostrar éxito si todo es válido
         if (isValid) {
             form.reset(); 
             successMessage.classList.remove("d-none");
@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            // Primero elimina la clase 'active' de todas las tarjetas
+            
             cards.forEach(c => c.classList.remove('active'));
             
-            // Luego añade la clase 'active' a la tarjeta clicada
+            // Luego añade la clase active a la tareta
             card.classList.add('active');
         });
     });
